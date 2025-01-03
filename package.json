@@ -4,7 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "dev": "ng serve --host 0.0.0.0 --configuration=dev",
+    "prod": "ng serve --host 0.0.0.0 --configuration=prod",
     "build": "ng build",
+    "build:prod": "ng build --configuration production --output-hashing=all --delete-output-path",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:angualr-struture": "node dist/angualr-struture/server/server.mjs"
@@ -22,6 +25,7 @@
     "@angular/router": "^19.0.0",
     "@angular/ssr": "^19.0.4",
     "express": "^4.18.2",
+    "ng-zorro-antd": "^19.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
